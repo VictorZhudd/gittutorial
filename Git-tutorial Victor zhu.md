@@ -55,6 +55,8 @@ Click on **finish**, now you have **Git** in your computer
   $ git config -- global user.email "example@email.com"
   check if your code looks like this
   ![pictures](https://github.com/VictorZhudd/gittutorial/blob/main/git%20username%20and%20email.JPG)
+  
+  (credit to Programming with Mosh https://www.youtube.com/watch?v=8JJ101D3knE&t=555s)
 
   ### set User Git Folder
   	mkdir myproject (*name this anyway you want
