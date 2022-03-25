@@ -5,23 +5,23 @@ Git is the most used version control system used in this world. A version contro
 # Installing Git
 1. Download from [Official Website](https://git-scm.com/downloads)
 
-[website pic](C:\Users\zhuho\Desktop\website.png)
+[website pic](https://github.com/VictorZhudd/gittutorial/blob/main/git%20install1.JPG)
 
-![](C:\Users\zhuho\Desktop\website.png)
+
 
 ### In this tutorial, I will use windows version as a example 
 
-![windows download version](C:\Users\zhuho\Desktop\新建文件夹\windows download version.JPG)
+![windows download version](https://github.com/VictorZhudd/gittutorial/blob/main/windows%20download%20version.JPG)
 
 Choose the version that are compatible to your computer, after download the installation application, click on it, and it suppose come out with this
 
-![git install1](C:\Users\zhuho\Desktop\新建文件夹\git install1.JPG) 
+![git install1](https://github.com/VictorZhudd/gittutorial/blob/main/git%20install1.JPG) 
 
 Click **Install**
 
 after installation
 
-![git install3](C:\Users\zhuho\Desktop\新建文件夹\git install3.JPG)
+![git install3](https://github.com/VictorZhudd/gittutorial/blob/main/git%20install3.JPG)
 
 
 
@@ -35,7 +35,7 @@ Click on **finish**, now you have **Git** in your computer
 
 - Email
 
-- 
+
 
   ### There are 3 level of configuration
 
@@ -43,33 +43,57 @@ Click on **finish**, now you have **Git** in your computer
   - global- All Repositories of current user
   - local-current Repositories 
 
-  *In here, it is suggest to use global level.*
+  *In here, it is suggested to use global level.*
 
   ### set User name
 
   $ git config -- global user.name "Firstname  lastname"
+  
 
   ### set User email
 
   $ git config -- global user.email "example@email.com"
+  check if your code looks like this
+  ![pictures](https://github.com/VictorZhudd/gittutorial/blob/main/git%20username%20and%20email.JPG)
 
+  ### set User Git Folder
+  	mkdir myproject (*name this anyway you want
+  	
+  	cd myproject
+	
+	
+	*mkdir* makes a new directory.
+
+	*cd* changes the current working directory.
   
+
 
   
 
 # Git Basic 
+First we should set up a A Git repository. A repository is the folder inside a project. This repository will tracks all changes made to files in your project. 
+
 
 ## 1. set up a repository
 
 ​	$ git init 
 
-Initialized empty Git repository in <location in your computer>
+Initialized empty Git repository in /Users/user/myproject/.git/. /Users/user is your userfolder located in your system drive(usually in c drive).
+
+
+Now you have create a repository, now try to commit something. 
+
 
 ### 2. commit to that repository
 
-1. git  add first-commit.py
+1. create a file called "pratice files"
+2. In your git cmd windows type $ git add <pratice files> 
+	this code will add your file into staging area.
+3. Now, if you want to make some changes, you could upload the changed files by the same method
+	 git add -A
+Then you could include a message.	
+     git commit -m "changes updated"
 
-2. use $ git commit -m "first commit" to include a message
 
    
 
@@ -81,17 +105,16 @@ Initialized empty Git repository in <location in your computer>
 
 ## 	2. How to create branches
 
-​	git branch NewBranches
-
-##  	3. delete new Branches
-
-​	
+​	This command will create a new branch that represent new development of your current files.
+git branch NewBranches
 
 1. ### delete local branches
+here are the command to delete NewBranches you just create
 
    git branch -d NewBranches
 
 2. ### Delete global branches
+here are the command that deletes an online branch.
 
    git push origin --delete NewBranches
 
@@ -129,7 +152,7 @@ Git command is simple, here is a [cheat sheet](https://education.github.com/git-
 
 ## Simple Git Exercises
 
-You have finished This tutorial, Here is a exercise you can do on your own. 
+You have finished This tutorial, Here are some question you can as your own. 
 
 1.  What is your Git Version?
 
