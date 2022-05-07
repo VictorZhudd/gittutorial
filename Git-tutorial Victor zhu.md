@@ -131,36 +131,36 @@ git branch NewBranches
 
 # Git Stash
 
-## 1. what is git stash
+### what is git stash
 
 git stash temporarily save (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
 The git stash command is useful when you are not ready to commit and need to switch branches or if we want to reverse back to where you started. You can stash your work by using stash commands. These command can make you save your work in the stash
  
 
 
-## 2. How to stash your work
+### How to stash your work
 
-1. First , we must begin by branching a new branch and lets called it stashtutorial. We do thatt by type in following command
+##	1. First , we must begin by branching a new branch and lets called it stashtutorial. We do thatt by type in following command
 	git branch stashtutorial
 
 
-2.Then we want to make sure we are working on the branch we just created.
-git checkout stashtutorial
+##	2.Then we want to make sure we are working on the branch we just created.
+	git checkout stashtutorial
 
-3. Now, let’s create a .py file for our purpose here and lets call it testfile.py
-git stash save “newtestfile”
+##	3. Now, let’s create a .py file for our purpose here and lets call it testfile.py
+	git stash save “newtestfile”
 
-4. Now lets see our stash by type in
-git stash list
+##	4. Now lets see our stash by type in
+	git stash list
 
-5.Now if we are ready to use the new file we will use the pop command, which will take the most recent stash and apply the changes within. Since we have only made one stash, it will apply the changes of that stash.
+##	5.Now if we are ready to use the new file we will use the pop command, which will take the most recent stash and apply the changes within. Since we have only made one stash, it will apply the changes of that stash.
 git stash pop
 
-6. If there were multiple stashes, the pop command would not work, try this if you want to see the first file you stash 
-stash@{0}
-git stash apply stash@{0}
+##	6. If there were multiple stashes, the pop command would not work, try this if you want to see the first file you stash 
+	stash@{0}
+	git stash apply stash@{0}
 
-7. if we want to remove a specific stash, we can use the drop command, with the stash’s id
+##	7. if we want to remove a specific stash, we can use the drop command, with the stash’s id
 	git stash drop stash@{0}
 
 
