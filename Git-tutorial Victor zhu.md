@@ -100,14 +100,14 @@ Then you could include a message.
    
 
 # Git Branches
+	
 
 ## 	1.  What is Branches
 
-1. A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process.
+If you are working on a project with a lot of people and you want to make a change to the collective project that you are working on. Branches command will let make specific changes to the file in the repository without affecting other people’s work.    
 
-## 	2. How to create branches
+## 	2. To begin creating a branch, type in the following command with a name for the branch “mybranch.”
 
-​	This command will create a new branch that represent new development of your current files.
 git branch NewBranches
 
 1. ### delete local branches
